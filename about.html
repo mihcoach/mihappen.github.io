@@ -5,48 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meet Your Coach | Make It Happen Coaching</title>
 <style>
-* {
-box-sizing: border-box;
-}
-body {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-color: #333;
-background-color: #f7f7f7;
-}
-header {
-background: #2c3e50;
-color: #fff;
-padding: 24px 16px;
-text-align: center;
-}
-header img {
-max-width: 120px;
-width: 100%;
-height: auto;
-margin-bottom: 12px;
-}
-header h1 {
-margin: 8px 0 4px;
-font-size: clamp(1.6rem, 4vw, 2.2rem);
-}
-header p {
-margin: 0;
-font-size: clamp(1rem, 3vw, 1.1rem);
-opacity: 0.9;
-}
-nav {
-margin-top: 12px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 12px;
-}
-nav a {
-color: #fff;
-text-decoration: none;
-font-weight: bold;
 font-size: 0.95rem;
 }
 nav a:hover {
@@ -97,6 +55,19 @@ font-size: 0.85rem;
 background: #2c3e50;
 color: #fff;
 }
+
+/* Desktop Enhancements */
+@media (min-width: 768px) {
+header {
+padding: 40px 20px;
+}
+section {
+padding: 48px 24px;
+}
+.cta {
+padding: 48px 24px;
+}
+}
 </style>
 </head>
 <body>
@@ -136,6 +107,5 @@ color: #fff;
   <footer>
     <p>&copy; 2026 Make It Happen Coaching</p>
   </footer>
-
 </body>
 </html>
