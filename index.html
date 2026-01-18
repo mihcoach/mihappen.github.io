@@ -4,160 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Make It Happen Coaching</title>
- <style>
-* {
-box-sizing: border-box;
-}
-body {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-color: #333;
-background-color: #f7f7f7;
-}
-header {
-background: #2c3e50;
-color: #fff;
-padding: 24px 16px;
-text-align: center;
-}
-header img {
-max-width: 120px;
-width: 100%;
-height: auto;
-margin-bottom: 12px;
-}
-header h1 {
-margin: 8px 0 4px;
-font-size: clamp(1.6rem, 4vw, 2.2rem);
-}
-header p {
-margin: 0;
-font-size: clamp(1rem, 3vw, 1.1rem);
-opacity: 0.9;
-}
-nav {
-margin-top: 12px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-gap: 12px;
-}
-nav a {
-color: #fff;
-text-decoration: none;
-font-weight: bold;
-font-size: 0.95rem;
-}
-nav a:hover {
-text-decoration: underline;
-}
-section {
-max-width: 900px;
-margin: 0 auto;
-padding: 32px 16px;
-background: #fff;
-}
-section h2 {
-color: #2c3e50;
-margin-top: 0;
-font-size: clamp(1.3rem, 3.5vw, 1.6rem);
-}
-.benefits ul {
-padding-left: 18px;
-}
-.benefits li {
-margin-bottom: 10px;
-}
-.cta {
-text-align: center;
-padding: 32px 16px;
-background: #ecf0f1;
-}
-.cta h2 {
-font-size: clamp(1.4rem, 4vw, 1.8rem);
-}
-.cta a {
-display: inline-block;
-background: #e67e22;
-color: #fff;
-padding: 14px 28px;
-text-decoration: none;
-font-size: 1rem;
-border-radius: 4px;
-margin-top: 12px;
-}
-.cta a:hover {
-background: #d35400;
-}
-footer {
-text-align: center;
-padding: 16px;
-font-size: 0.85rem;
-background: #2c3e50;
-color: #fff;
-}
-</style>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1f2933;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 16px;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand img {
+      width: 48px;
+      height: 48px;
+    }
+    .brand h1 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    nav a {
+      margin-left: 16px;
+      text-decoration: none;
+      font-weight: 500;
+      color: #1f2933;
+    }
+    nav a:hover { color: #2563eb; }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 16px 56px;
+    }
+    .hero h2 {
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      margin-top: 0;
+    }
+    .hero p { max-width: 620px; }
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 16px;
+    }
+    .benefits {
+      display: grid;
+      gap: 16px;
+    }
+    .benefit {
+      padding: 20px;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 20px 16px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <!-- Replace src with your actual logo file -->
-    <img src="logo_w_4000.png" alt="Make It Happen Coaching Logo" />
-    <h1>Make It Happen Coaching</h1>
-    <p>Professional Coaching</p>
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <img src="logo_w_4000.png" alt="Make It Happen Coaching Logo" />
+      <h1>Make It Happen Coaching</h1>
+    </div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">Meet Coach Jessica</a>
+      <a href="about.html">About Coach Jessica</a>
     </nav>
-  </header>
-
-  <section>
-    <h2>What Is Coaching?</h2>
-    <p>
-      People have audacious goals but can struggle with a path or the accountability to get there.
-      That's understandable- we're people! I meet you where you are and support you in obtaining your goals.
-      From my everyday job to coaching on an individual basis, I'm about showing up and supporting people
-      to reach their objectives. Simply put, you deserve to reach your ultimate goals, and I'm here to get you there.
-    </p>
-    
-    <p>
-      Coaching is not therapy, consulting, mentoring, training, or sports coaching. It is a partnership between
-      you and me. I will guide you in a thought-provoking and creative process and inspire you to maximize your
-      personal and professional potential.
-    </p>
-
-    <p>
-      Coaching isn't only for those big sticky situations, and it certainly doesn t only apply to when you're stuck.
-      Cut through the noise, bring clarity to any situation, or learn more about yourself through coaching with me.
-      Remember, I'm here to support your goals. Bring your agenda and let's get started.
-    </p>
-
-    <p>
-      At Make It Happen Coaching, I partner with you to explore where you are now, where you want
-      to be, and what might be holding you back. Together, we create practical strategies that
-      support meaningful and lasting change.
-    </p>
-    <div class="benefits">
-      <h2>The path to reaching your goal:</h2>
-      <ul>
-        <li>Discovery Session: Let's chat to see if coaching is right for you.</li>
-        <li>Get to Work: Clearly articulate your goals, and discuss a path forward.</li>
-        <li>Celebrate: Enjoy your success and continue your trajectory.</li>
-      </ul>
-    </div>
-  </section>
-
-  <div class="cta">
-    <h2>Ready to Get Started?</h2>
-    <p>Book a session and take the first step toward making it happen.</p>
-    <!-- Replace the href with your actual booking link -->
-    <a href="https://calendly.com/makeithappencoaching/coaching-with-jessica" target="_blank">Book a Session</a>
   </div>
+</header>
 
-  <footer>
-    <p>&copy; 2026 Make It Happen Coaching</p>
-  </footer>
+<div class="hero">
+  <h2>Clarity. Confidence. Forward Momentum.</h2>
+  <p>Professional coaching designed to help you get unstuck and take intentional action.</p>
+  <a href="https://calendly.com/makeithappencoaching/coaching-with-jessica" target="_blank">Book a Session</a>
+</div>
+
+<section>
+  <h3>Benefits of Coaching</h3>
+  <div class="benefits">
+    <div class="benefit">Clear goals and priorities</div>
+    <div class="benefit">Confidence in decision-making</div>
+    <div class="benefit">Support and accountability</div>
+    <div class="benefit">Long-term personal growth tools</div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Make It Happen Coaching
+</footer>
 
 </body>
 </html>
