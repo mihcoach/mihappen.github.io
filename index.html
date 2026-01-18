@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Make It Happen Coaching</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -15,61 +18,97 @@
     header {
       background: #2c3e50;
       color: #fff;
-      padding: 40px 20px;
+      padding: 24px 16px;
       text-align: center;
     }
     header img {
-      max-width: 500px;
-      margin-bottom: 20px;
+      max-width: 120px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 12px;
     }
     header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.2rem;
+      margin: 8px 0 4px;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
     }
     header p {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: clamp(1rem, 3vw, 1.1rem);
       opacity: 0.9;
+    }
+    nav {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 32px 16px;
       background: #fff;
     }
     section h2 {
       color: #2c3e50;
       margin-top: 0;
+      font-size: clamp(1.3rem, 3.5vw, 1.6rem);
     }
-    .path ul {
-      padding-left: 20px;
+    .benefits ul {
+      padding-left: 18px;
     }
-    .path li {
+    .benefits li {
       margin-bottom: 10px;
     }
     .cta {
       text-align: center;
-      padding: 40px 20px;
+      padding: 32px 16px;
       background: #ecf0f1;
+    }
+    .cta h2 {
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
     }
     .cta a {
       display: inline-block;
       background: #e67e22;
       color: #fff;
-      padding: 15px 30px;
+      padding: 14px 28px;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-size: 1rem;
       border-radius: 4px;
+      margin-top: 12px;
     }
     .cta a:hover {
       background: #d35400;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
+      padding: 16px;
+      font-size: 0.85rem;
       background: #2c3e50;
       color: #fff;
+    }
+
+    /* Desktop Enhancements */
+    @media (min-width: 768px) {
+      header {
+        padding: 40px 20px;
+      }
+      section {
+        padding: 48px 24px;
+      }
+      .cta {
+        padding: 48px 24px;
+      }
     }
   </style>
 </head>
@@ -78,7 +117,12 @@
   <header>
     <!-- Replace src with your actual logo file -->
     <img src="logo_w_4000.png" alt="Make It Happen Coaching Logo" />
+    <h1>Make It Happen Coaching</h1>
     <p>Professional Coaching</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Meet Coach Jessica</a>
+    </nav>
   </header>
 
   <section>
@@ -107,22 +151,7 @@
       to be, and what might be holding you back. Together, we create practical strategies that
       support meaningful and lasting change.
     </p>
-    
-    <h2>Meet Coach Jessica</h2>
-    <p>
-      I'm glad you're here. Taking the first steps into something like working on yourself can feel daunting
-      and sometimes selfish - I get it. Here's the secret though, by taking these steps you become the best
-      version of yourself. And when you're the best version of yourself, you thrive.
-    </p>
-    <p>Theré's never a one-size fits all solution in coaching. I believe everyone and every circumstance is
-      unique: I'm empathetic to all facets of life. This has led me on my journey to where I am today - someone
-      who likes to help. I meet people where they are and guide them on a forward path with a sense of clarity.
-    </p>
-    <p>
-      I can't wait to get to know you and watch as you transform yourself through your journey. Let's make it happen!
-    </p>
-    
-    <div class="path">
+    <div class="benefits">
       <h2>The path to reaching your goal:</h2>
       <ul>
         <li>Discovery Session: Let's chat to see if coaching is right for you.</li>
@@ -136,11 +165,11 @@
     <h2>Ready to Get Started?</h2>
     <p>Book a session and take the first step toward making it happen.</p>
     <!-- Replace the href with your actual booking link -->
-    <a href="https://calendly.com/makeithappencoaching/coaching-with-jessica" target="_blank">Book a free Discovery Session</a>
+    <a href="https://calendly.com/makeithappencoaching/coaching-with-jessica" target="_blank">Book a Session</a>
   </div>
 
   <footer>
-    <p>&copy; 2026 Make It Happen Coaching, LLC</p>
+    <p>&copy; 2026 Make It Happen Coaching</p>
   </footer>
 
 </body>
