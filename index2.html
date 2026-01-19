@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make It Happen Coaching</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1f2933;
+      background-color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 20px 16px;
+    }
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand img {
+      width: 195px;
+      height: 48px;
+    }
+    nav {
+      display: flex;
+      gap: 16px;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #1f2933;
+    }
+    nav a:hover { color: #2563eb; }
+
+    /* Hamburger */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+    .menu-toggle span {
+      width: 24px;
+      height: 3px;
+      background: #1f2933;
+    }
+
+    /* Mobile Nav */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 16px;
+      }
+      nav.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo_b_4000.png" alt="Make It Happen Coaching Logo" />
+    </a>
+    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('active')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Jessica</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h2>What is Coaching?</h2>
+   <p>
+    People have audacious goals but can struggle with a path or the accountability to get there.
+    That's understandable- we're people! I meet you where you are and support you in obtaining
+    your goals. From my everyday job to coaching on an individual basis, I'm about showing up
+    and supporting people to reach their objectives. Simply put, you deserve to reach your
+    ultimate goals, and I'm here to get you there.
+  </p>
+  <p>
+    Coaching is not therapy, consulting, mentoring, training, or sports coaching. It is a
+    partnership between you and me. I will guide you in a thought-provoking and creative process
+    and inspire you to maximize your personal and professional potential.
+  </p>
+  <p>
+    Coaching isn't only for those big sticky situations, and it certainly doesn t only apply to
+    when you're stuck. Cut through the noise, bring clarity to any situation, or learn more about
+    yourself through coaching with me. Remember, I'm here to support your goals. Bring your agenda
+    and let's get started.
+  </p>
+  <p>
+    At Make It Happen Coaching, I partner with you to explore where you are now, where you want to be,
+    and what might be holding you back. Together, we create practical strategies that support
+    meaningful and lasting change.
+</p>
+  <a href="https://calendly.com/makeithappencoaching/coaching-with-jessica" target="_blank">Book A Free Session</a>
+</div>
+</div>
+
+<section>
+  <h3>The Path to Reaching Your Goal</h3>
+   <div class="benefits">
+    <div class="benefit">Discovery Session: Let's chat to see if coaching is right for you.</div>
+    <div class="benefit">Get to Work: Clearly articulate your goals, and discuss a path forward.</div>
+    <div class="benefit">Celebrate: Enjoy your success and continue your trajectory.</div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Make It Happen Coaching
+</footer>
+
+</body>
+</html>
